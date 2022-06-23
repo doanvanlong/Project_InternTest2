@@ -59,7 +59,7 @@ function save_gioithieu(){
 			}
 		}		
 	}
-
+	
 	$data['ten'] = $_POST['ten'];
 	$data['tenkhongdau'] = changeTitle($_POST['ten']);
 	$data['mota'] = $_POST['mota'];

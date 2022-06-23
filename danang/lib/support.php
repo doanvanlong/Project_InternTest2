@@ -51,6 +51,11 @@ switch ($com) {
 						$config_s['mauxe'] = true;
 						$config_s['loaixe'] = true;
 					case 'edit':
+						$config_s['hieuxe'] = true;
+						$config_s['doixe'] = true;
+						$config_s['kieuxe'] = true;
+						$config_s['mauxe'] = true;
+						$config_s['loaixe'] = true;
 						$config_s['moi'] = false;
 						$config_s['banchay'] = false;
 						$config_s['h2'] = false;
@@ -244,6 +249,10 @@ switch ($com) {
 			case 'icon-best-sale':
 				$config_s['size_anh'] = 'Chiều rộng <b>50px</b> Chiều cao: <b>50px</b>';
 				break;
+				case 'vi-sao-chon-toi':
+					$config_s['ten']='true';
+					$config_s['size_anh'] = 'Chiều rộng <b>275px</b> Chiều cao: <b>232px</b>';
+					break;
 		}
 		break;
 	case 'slider':
@@ -260,7 +269,7 @@ switch ($com) {
 				$config_s['size_anh'] = 'Chiều rộng <b>1920px</b> Chiều cao: <b>800px</b>';
 				break;
 			case 've-chung-toi':
-				$config_s['size_anh'] = 'Chiều rộng <b>24px | Chiều cao:24px</b>';
+				$config_s['size_anh'] = 'Chiều rộng <b>81px | Chiều cao:81px</b>';
 				$config_s['link'] = false;
 				break;
 			case 'y-kien-khach-hang':

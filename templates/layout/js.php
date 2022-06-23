@@ -202,61 +202,97 @@
 	}
 </script>
 
-<?php  if ($_GET['com'] == '' || $_GET['com'] == 'index') {
+<?php if ($_GET['com'] == '' || $_GET['com'] == 'index') {
 ?>
 
-<script>
-	$(".slick_dichvu").slick({
-	dots: false,
-	infinite: true,
-	arrows: false,
-	speed: 300,
-	autoplay: true,
-	slidesToShow: 5,
-	slidesToScroll: 1,
-	responsive: [
-	{
-	breakpoint: 1024,
-	settings: {
-	slidesToShow: 3,
-	slidesToScroll: 1,
-	infinite: true,
-	dots: true,
-	},
-	},
-	{
-	breakpoint: 600,
-	settings: {
-	slidesToShow: 2,
-	slidesToScroll: 1,
-	},
-	},
-	{
-	breakpoint: 480,
-	settings: {
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	},
-	},
-	// You can unslick at a given breakpoint now by adding:
-	// settings: "unslick"
-	// instead of a settings object
-	],
-	});
+
+	<script>
+		$(".slick_dichvu").slick({
+			dots: false,
+			infinite: true,
+			arrows: false,
+			speed: 300,
+			autoplay: true,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			responsive: [{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true,
+					},
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+					},
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					},
+				},
+				// You can unslick at a given breakpoint now by adding:
+				// settings: "unslick"
+				// instead of a settings object
+			],
+		});
+	</script>
+	<script>
+		$(".slick_visaochontoi").slick({
+			dots: false,
+			infinite: true,
+			arrows: false,
+			speed: 300,
+			autoplay: true,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			responsive: [{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true,
+					},
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					},
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					},
+				},
+			
+			],
+		});
 	</script>
 <?php
 }
 ?>
 <script>
-    $('.search_icon_close_desktop').hide()
-    $('.search_icon_desktop').click(function(){
-        $('#search_desktop').css('display','flex');
-        $('.search_icon_desktop').hide()
-        $('.search_icon_close_desktop').show()
-    })
-    $('.search_icon_close_desktop').click(function() {
-        $('#search_desktop').css('display', 'none');
-        $('.search_icon_desktop').show()
-        $('.search_icon_close_desktop').hide()
-    })
+	$('.search_icon_close_desktop').hide()
+	$('.search_icon_desktop').click(function() {
+		$('#search_desktop').css('display', 'flex');
+		$('.search_icon_desktop').hide()
+		$('.search_icon_close_desktop').show()
+	})
+	$('.search_icon_close_desktop').click(function() {
+		$('#search_desktop').css('display', 'none');
+		$('.search_icon_desktop').show()
+		$('.search_icon_close_desktop').hide()
+	})
 </script>

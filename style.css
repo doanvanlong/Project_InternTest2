@@ -2281,6 +2281,7 @@ a.border_mau {
 	background-image: url('upload/images/bg/td.png');
 	background-position: bottom;
 	background-repeat: no-repeat;
+	font-size:30px;
  }
  .item_dichvu{
 	margin: 0 10px;
@@ -2600,6 +2601,59 @@ cursor: pointer;
 #vi-sao-chon-toi{
 	width:100%;
 	text-align: center;
+	background-color:#3b5c6b;
+
+}
+.content_vechungtoi{
+	color:rgba(255, 255, 255, 0.8);
+}
+.vct_title{
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: left;
+	font-size: 17px;
+}
+.vct_desc{
+	text-align-last: left;
+}
+.box_visaochontoi{
+	/* width:100%;
+	height:232px;
+	background-repeat: no-repeat;
+	background-color:#3b5c6b;
+	background-size: cover; */
+	position: relative;
+}
+.box_vechungtoi{
+	display:flex !important;
+	height: 232px;
+	justify-content:center;
+	align-items: center;
+}
+.box_vechungtoi_content{
+	flex:2;
+	position: relative;
+}
+.box_vechungtoi_img{
+	flex:1.3;
+}
+.lable_visaochontoi{
+	position: absolute;
+	top: 50% !important;
+	transform:translateY(-50%);
+	right: 20%;
+	width:240px;
+	padding:10px 20px;
+	background-color: #ff6d00;
+	border:3px solid #3b5c6b;
+
+}
+.lable_visaochontoi span{
+	text-transform: uppercase;
+	font-size: 24px;
+	color:rgba(255, 255, 255, 0.939);
+	font-weight: 700;
+	line-height: 24px;
 }
 /*duan*/
 #du-an {
@@ -3333,6 +3387,12 @@ a.a_cover {
 	.gt_tieude span {
 		font-size: 25px !important;
 	}
+	.lable_visaochontoi{
+		width:180px;
+	}
+	.lable_visaochontoi span{
+		font-size: 16px;
+	}
 
 }
 
@@ -3353,6 +3413,25 @@ a.a_cover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width:992px) {
+
+	.box_vechungtoi_img img{
+		/* width:100%; */
+		display:none;
+	}
+	.box_vechungtoi_content{
+		flex:unset;
+	}
+	.lable_visaochontoi{
+		position:unset !important;
+		transform: unset;
+		display:none;
+	}
+	.vct_title{
+		font-size: 14px;
+	}
+	.vct_desc{
+		font-size:12px;
+	}
 	.title_index{
 		font-size:20px !important;
 	}
@@ -3544,6 +3623,12 @@ a.a_cover {
 
 @media only screen and (max-width:767px) {}
 @media only screen and (max-width:600px) {
+	.vct_title{
+		font-size:13px;
+	}
+	.vct_desc{
+		font-size:11px;
+	}
 	div.gallery-image-item {
 		display: inline-block;
 		padding: 5px;
@@ -3650,9 +3735,29 @@ a.a_cover {
 
 }
 @media only screen and (max-width:575px) {
-
+	.vct_title{
+		font-size:14px;
+	}
+	.vct_desc{
+		font-size:12px;
+	}
+	.box_vechungtoi{
+		flex-direction: column;
+		height:auto;
+	}
+	.box_vechungtoi_content .img{
+		text-align:left !important;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+	}
+	.box_vechungtoi_content{
+		padding:14px 0;
+	}
+	
 }
 @media only screen and (max-width:425px) {
+	
 	div.gallery-image-item {
 		display: inline-block;
 		padding: 5px;
@@ -3694,6 +3799,9 @@ a.a_cover {
 	#tabs .nav-link {
 		font-size: 12px;
 		line-height: 16px;
+	}
+	.items_vct_content{
+		flex-direction: column;
 	}
 }
 

@@ -20,7 +20,7 @@
 
 
 
-	$config['lang']=array(''=>'Tiếng Việt','en'=>'Tiếng Anh');
+	$config['lang']=array(''=>'Tiếng Việt');
 	$config['phi']=0;
 	$config['login']['attempt'] = 5;
 	$config['login']['delay'] =10; 

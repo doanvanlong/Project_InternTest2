@@ -31,6 +31,7 @@ $row_logo = $d->fetch_array();
       <?php $pqmenu->phanquyen_menu('Trang chủ', 'Text footer', 'about', 'capnhat', 'text-footer'); ?>
       <?php $pqmenu->phanquyen_menu('Trang chủ', 'Ý kiến khách hàng', 'slider', 'man_photo', 'y-kien-khach-hang'); ?>
       <?php $pqmenu->phanquyen_menu('Trang chủ', 'Banner dịch vụ index', 'background', 'capnhat', 'banner-dich-vu-index'); ?>
+      <?php $pqmenu->phanquyen_menu('Trang chủ','Về chúng tôi','slider','man_photo','ve-chung-toi'); ?>
       <?php $pqmenu->phanquyen_menu('Trang chủ', 'Banner vì sao chọn chúng tôi', 'background', 'capnhat', 'vi-sao-chon-toi'); ?>
       <?php $pqmenu->phanquyen_menu('Trang chủ', 'Banner Liên hệ index', 'background', 'capnhat', 'lien-he-chung-toi-index'); ?>
       <?php $pqmenu->phanquyen_menu('Trang chủ', 'Banner Footer ', 'background', 'capnhat', 'banner-footer'); ?>
@@ -49,7 +50,6 @@ $row_logo = $d->fetch_array();
     <ul class="sub">
       <?php $pqmenu->phanquyen_menu('Sản phẩm', 'Danh mục cấp 1', 'product', 'man_danhmuc', 'san-pham'); ?>
       <?php $pqmenu->phanquyen_menu('Sản phẩm', 'Danh mục cấp 2', 'product', 'man_list', 'san-pham'); ?>
-      <?php $pqmenu->phanquyen_menu('Sản phẩm', 'Danh mục cấp 3', 'product', 'man_cat', 'san-pham'); ?>
       <?php $pqmenu->phanquyen_menu('Sản phẩm', 'Sản phẩm', 'product', 'man', 'san-pham'); ?>
       <?php $pqmenu->phanquyen_menu('Sản phẩm', 'Đánh giá sản phẩm', 'comment', 'man', 'san-pham'); ?>
       <?php $pqmenu->phanquyen_menu('Hình ảnh', 'Banner sản phẩm', 'background', 'capnhat', 'banner-san-pham'); ?>
@@ -77,8 +77,6 @@ $row_logo = $d->fetch_array();
   <li class="cat_fa <?php if (in_array($_GET['type'], array('tin-tuc', 'banner-tin-tuc'))) echo ' activemenu' ?>" id="menu_TT"><a href="" title="" class="exp"><span><i class="fa fa-newspaper-o"></i> Tin tức</span><strong></strong></a>
     <ul class="sub">
       <?php $pqmenu->phanquyen_menu('Tin tức', 'Danh mục cấp 1', 'news', 'man_danhmuc', 'tin-tuc'); ?>
-      <?php $pqmenu->phanquyen_menu('Tin tức', 'Danh mục cấp 2', 'news', 'man_list', 'tin-tuc'); ?>
-      <?php $pqmenu->phanquyen_menu('Tin tức', 'Danh mục cấp 3', 'news', 'man_cat', 'tin-tuc'); ?>
       <?php $pqmenu->phanquyen_menu('Tin tức', 'Bài viết', 'news', 'man', 'tin-tuc'); ?>
       <?php $pqmenu->phanquyen_menu('Tin tức', 'Banner tin tức', 'background', 'capnhat', 'banner-tin-tuc'); ?>
       <?php $pqmenu->phanquyen_menu('Tin tức', 'Khai báo SEO Google', 'about', 'capnhat', 'tin-tuc'); ?>
